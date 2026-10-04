@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laundry Services - Mobile Hamburger Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Logo</div>
+
+    <!-- Desktop Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <span class="username-badge">Username</span>
+
+      <!-- 
+        Mobile Menu Trigger:
+        A <button> is naturally focusable and retains focus on click.
+        tabindex="0" guarantees keyboard/mobile tap accessibility.
+      -->
+      <div class="menu-container">
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" tabindex="0">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <!-- Sibling/Child list targeted via :focus pseudo-class -->
+        <nav class="mobile-menu-drawer">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Revitalize Your Clothes with Expert <span class="highlight">Laundry Services!</span>
+      </h1>
+      <p class="hero-desc">
+        From premium dry cleaning to swift wash and fold, we deliver care and convenience.
+        Schedule a pickup and rediscover the freshness of your clothes today!
+      </p>
+      <a href="#book" class="cta-btn">Book a service today!</a>
+    </div>
+
+    <div class="hero-image">
+      <img 
+        src="https://illustrations.popertee.com/illustrations/washing-machine.png" 
+        alt="Laundry Machine Illustration" 
+        onerror="this.src='https://placehold.co/320x320/e0f2fe/0284c7?text=Laundry+App'" 
+      />
+    </div>
+  </main>
+
+</body>
+</html>
